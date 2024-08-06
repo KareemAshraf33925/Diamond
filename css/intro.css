@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(../images/montan.jpg) center center/cover no-repeat;
+    height: 150vh;
+}
+/* start-intro */
+#intro .container{
+    margin: 80px 250px;
+    position: relative;
+}
+#intro .container a{
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 28px;
+    right: 85px
+}
+#intro .container a i{
+    font-size: 25px;
+}
+
+#intro .container .intro-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   background-color: rgba(0, 0, 0, 0.801);
+    color: #fff;
+    width: 800px;
+    height: 950px;
+    border-radius: 10px;
+}
+#intro .container .intro-info h1{
+    margin: 80px 50px 40px;
+    font-size: 30px;
+    font-family:Tahoma,sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    width: 75px;
+    
+}
+#intro .container .intro-info img{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 45px;
+}
+#intro .container .intro-info .p-1{
+    font-size: 14px;
+    font-weight: 400;
+    width: 630px;
+    font-family:Tahoma,sans-serif;
+    margin:50px 0px 0px 45px ;
+    line-height: 30px;
+}
+
+#intro .container .intro-info .p-1 span{
+    border-bottom: 1px dashed #fff;
+    margin-left: 5px;
+}
+#intro .container .intro-info .p-2{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:Tahoma,sans-serif;
+    width: 720px;
+    margin: 30px 0px 50px 45px ;
+    line-height: 30px;
+}
+/* End-intro */
+@media (max-width:767px){
+    #intro .container{
+        margin: 80px 30px;
+    }
+    #intro .container a{
+        position: absolute;
+        right: 30px
+    }
+    #intro .container .intro-info{
+        width:700px;
+    }
+    #intro .container .intro-info img{
+        width: 610px;
+    }
+    #intro .container .intro-info .p-2{
+        width: 620px;
+    }
+
+
+}
+@media(min-width:768px){
+    #intro .container{
+        margin: 80px 15px;
+        padding: 0 15px;
+        width: 738px;
+    }
+    #intro .container .intro-info{
+        width: 700px;
+       
+    }
+    #intro .container .intro-info .p-2{
+        width: 633px;
+    }
+    #intro .container a{
+        right:50px
+    }
+
+}
+@media(min-width:992px){
+    #intro .container{
+        margin: 80px 133px;
+        padding: 0 15px;
+        width: 962px;
+    }
+    #intro .container .intro-info{
+        width: 960px;
+    }
+
+}
+@media(min-width:1200px){
+    body{
+        height: 150vh;
+    }
+    #intro .container{
+        margin: 50 auto;
+        padding: 0 15px;
+        width: 1170px;
+    }
+    #intro .container .intro-info{
+        width: 90%;
+        height: 900px;
+    }
+    #intro .container a{
+        position: absolute;
+        right: 160px
+    }
+    #intro .container .intro-info img{
+        width: 90%;
+        
+    }
+    #intro .container .intro-info .p-1{
+        width:90%;
+    }
+    #intro .container .intro-info .p-2{
+        width:90%;
+    }
+
+
+}

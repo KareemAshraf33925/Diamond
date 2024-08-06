@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(../images/montan.jpg) center center/cover no-repeat;
+    height: 110vh;
+}
+/* start-about */
+#about .container{
+    margin: 100px 250px;
+    position: relative;
+}
+#about .container a{
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 28px;
+    right: 85px
+}
+#about .container a i{
+    font-size: 25px;
+}
+
+#about .container .about-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   background-color: rgba(0, 0, 0, 0.801);
+    color: #fff;
+    width: 800px;
+    height: 650px;
+    border-radius: 10px;
+}
+#about .container .about-info h1{
+    margin: 80px 50px 40px;
+    font-size: 30px;
+    font-family:Tahoma,sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    width: 75px;
+    
+}
+#about .container .about-info img{
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 45px;
+}
+#about .container .about-info .p-1{
+    font-size: 14px;
+    font-weight: 400;
+    width: 630px;
+    font-family:Tahoma,sans-serif;
+    margin:50px 0px 0px 45px ;
+    line-height: 30px;
+}
+
+/* End-about */
+@media (max-width:767px){
+    #about .container{
+        margin: 80px 30px;
+    }
+    #about .container a{
+        position: absolute;
+        right: 30px
+    }
+    #about .container .about-info{
+        width:700px;
+    }
+    #about .container .about-info img{
+        width: 610px;
+    }
+    #about .container .about-info .p-2{
+        width: 620px;
+    }
+
+
+}
+@media(min-width:768px){
+    #about .container{
+        margin: 80px 15px;
+        padding: 0 15px;
+        width: 738px;
+    }
+    #about .container .about-info{
+        width: 700px;
+       
+    }
+    #about .container .about-info .p-2{
+        width: 633px;
+    }
+    #about .container a{
+        right:50px
+    }
+
+}
+@media(min-width:992px){
+    #about .container{
+        margin: 80px 133px;
+        padding: 0 15px;
+        width: 962px;
+    }
+    #about .container .about-info{
+        width: 960px;
+    }
+
+}
+@media(min-width:1200px){
+    body{
+        height: 100vh;
+    }
+    #about .container{
+        margin: 50 auto;
+        padding: 0 15px;
+        width: 1170px;
+    }
+    #about .container .about-info{
+        width: 90%;
+        height: 600px;
+    }
+    #about .container a{
+        position: absolute;
+        right: 160px
+    }
+    #about .container .about-info img{
+        width: 90%;
+        
+    }
+    #about .container .about-info .p-1{
+        width:90%;
+    }
+    #about .container .about-info .p-2{
+        width:90%;
+    }
+
+
+}

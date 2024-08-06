@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body ,html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+/* start-header */
+#header {
+    background:url(../images/montan.jpg) center center/cover no-repeat;
+    height: 100vh;
+}
+#header .container{
+    margin: 0px 0px 0px 0px;
+}
+
+#header .container .diamoand{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    position: relative;
+}
+#header .container .diamoand .item{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#header .container .diamoand .item::after{
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -32px;
+    left: 7px;
+    transform: rotate(90deg);
+
+}
+#header .container .diamoand .item img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    right: 3px;
+    animation: scal 0.6s linear infinite;
+   
+}
+@keyframes scal{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#header .container .header-info{
+    text-align: center;
+}
+#header .container .header-info .head{
+    text-transform:capitalize;
+    color: #fff;
+    font-family:Tahoma ,sans-serif;
+    margin: 40px 0px 0px 15px;
+}
+#header .container .header-info .p-1{
+    text-transform: capitalize;
+    color: #fff;
+    font-family:Tahoma ,sans-serif;
+    margin:30px 20px 0px 0px ;
+    line-height: 30px;
+    letter-spacing:5px;
+    font-size: 14px;
+
+}
+#header .container .header-info p span{
+    border-bottom: 1px dashed #fff;
+    
+}
+#header .container .button{
+    margin:60px 0px 0px 0px;
+    border-top: 1px solid #fff;
+    width: 600px;
+    height: 200px;
+}
+#header .container .button .items{
+    margin-left: 80px;
+    position: relative;
+}
+#header .container .button .items::before{
+    content: " ";
+    width:100px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top:50px;
+    left:155px;
+    transform: rotate(90deg);
+}
+#header .container .button .items button{
+    margin-top: 100px;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #fff ;
+    margin-right:-5px;
+    text-align: center;
+    padding: 12px 30px;
+    display: inline-block;
+}
+#header .container .button .items button a{
+   text-decoration: none;
+   color: #fff;
+}
+#header .container .button .items button:hover{
+    cursor: pointer;
+    background-color: #ffffff54;
+}
+
+
+/* End-header */
+@media(max-width:1440px){
+    body ,html{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #header {
+        height: 120vh;
+    }
+    #header .container{
+        margin: 0px 400px;
+    }
+    #header .container .header-info{
+       
+        margin-left:0px;
+    }
+    #header .container .header-info h1{
+
+        margin:30px 90px 0px 0px;
+    }
+
+
+
+}
+@media(max-width:1024px){
+
+    body ,html{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #header{
+        height: 110vh;
+    }
+    #header .container{
+        margin: 0px 200px;
+    }
+    #header .container .header-info{
+        margin-left: 50px;
+    }
+    #header .container .header-info h1{
+        margin:30px 90px 0px 0px;
+    }
+    #header .container .header-info p{
+        margin:20px 100px 0px 0px ;
+        line-height: 30px;
+        letter-spacing:5px;
+        font-size: 14px;
+    
+    }
+    #header .container .button{
+        margin:35px 0px 0px 0px;
+       
+    }
+    
+
+
+
+}
+@media(max-width:768px){
+    #header .container{
+        margin: 0px 100px;
+    }
+    #header {
+
+        height:100vh;
+    }
+
+}
+@media(max-width:375px){
+    body ,html{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #header {
+
+        height:100vh;
+    }
+    #header .container{
+        margin: 0px 50px;
+    }
+    #header .container .diamoand{
+        width: 300px;
+        height: 200px;
+        
+    }
+    #header .container .header-info p{
+       
+        margin:30px 5px 0px 0px ;
+        line-height: 30px;
+        letter-spacing:3px;
+        font-size: 15px;
+        line-height: 20px;
+    
+    }
+    #header .container .button{
+        margin:30px 0px 0px 0px;
+        width: 300px;
+        height: 200px;
+    }
+    #header .container .button .items{
+        margin-left: 10px;
+    }
+    #header .container .button .items::before{
+        position: absolute;
+        top:50px;
+        left:75px;
+    }
+    #header .container .button .items button{
+        margin-top:100px;
+        margin-right:-5px;
+        padding: 10px 10px;
+        display: inline-block;
+    }
+
+
+}
